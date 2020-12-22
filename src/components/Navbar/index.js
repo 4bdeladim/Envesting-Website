@@ -18,13 +18,13 @@ const Navbar = ({navbarHandler, click, open, close }) => {
                 
             </NavbarTitleContainer>
             <NavbarWrapper>
-                <NavbarItem onClick={close}  to='pricing'>
+                <NavbarItem onClick={close}  to='pricing' smooth={true} duration={800} spy={true}  exact='true' offset={-80} >
                     Pricing
                 </NavbarItem>
-                <NavbarItem to='aboutus'  onClick={close} >
+                <NavbarItem to='aboutus' smooth={true} duration={800} spy={true}  exact='true' offset={-80}   onClick={close} >
                     About US 
                 </NavbarItem>
-                <NavbarItem to='tisimonsials'  onClick={close} >
+                <NavbarItem to='tisimonsials' smooth={true} duration={800} spy={true}  exact='true' offset={-80}   onClick={close} >
                     Tistimonials
                 </NavbarItem>
                 <Button  onClick={close} >
